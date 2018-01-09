@@ -1,0 +1,29 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "leap2.0", "Assembly-CSharp.csproj", "{EC0222F8-F6A0-31F9-3CBA-FC0391A4BFBD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "leap2.0", "Assembly-CSharp-Editor.csproj", "{C5ED2C19-6D9D-8877-C938-767FDABD1403}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{EC0222F8-F6A0-31F9-3CBA-FC0391A4BFBD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EC0222F8-F6A0-31F9-3CBA-FC0391A4BFBD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EC0222F8-F6A0-31F9-3CBA-FC0391A4BFBD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EC0222F8-F6A0-31F9-3CBA-FC0391A4BFBD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C5ED2C19-6D9D-8877-C938-767FDABD1403}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C5ED2C19-6D9D-8877-C938-767FDABD1403}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C5ED2C19-6D9D-8877-C938-767FDABD1403}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C5ED2C19-6D9D-8877-C938-767FDABD1403}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(MonoDevelopProperties) = preSolution
+		StartupItem = Assembly-CSharp.csproj
+	EndGlobalSection
+EndGlobal
