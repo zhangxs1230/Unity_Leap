@@ -4,24 +4,20 @@ using UnityEngine;
 
 public class InteractionEvents : MonoBehaviour {
 
-	// Use this for initialization
-
     private Vector3 pos;
     private Quaternion rotation;
-    private int pre_frame;
-    private int cur_frame;
+    private int max_copy_count;
 	void Start () {
+	// Use this for initialization
 		Debug.Log(gameObject.GetType());
         pos = gameObject.transform.position;
         rotation = gameObject.transform.rotation;
+        max_copy_count = 1;
 	}
 	
 	// Update is called once per frame
 	void Update () {
-        cur_frame = Time.frameCount;
-        if(cur_frame-pre_frame>60){
-            Instantiate(gameObject,pos,rotation);
-        }
+
 	}
 
     public void on_grasp_begin(){
@@ -38,14 +34,19 @@ public class InteractionEvents : MonoBehaviour {
         Debug.Log("hover begin");
     }
 
+    private void copy_object(){
+        if(max_copy_count>0){
+            Instantiate(gameObject,pos,rotation);
+            max_copy_count--;
+        }
+    }
+
     public void on_contact_begin(){
         Debug.Log("contact the object!");
-        pre_frame = Time.frameCount;
-        Debug.Log(pre_frame);
     }
 
     public void on_contact_end(){
-        Debug.Log(cur_frame);
         Destroy(gameObject,8.0f);
+        Invoke("copy_object",1.2f);
     }
 }
