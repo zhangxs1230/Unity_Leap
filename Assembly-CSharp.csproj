@@ -249,9 +249,12 @@
      <Compile Include="Assets\LeapMotion\Modules\InteractionEngine\Scripts\Utility\InteractionControllerSwitcher.cs" />
      <Compile Include="Assets\LeapMotion\Modules\InteractionEngine\Scripts\Utility\KabschSolver.cs" />
      <Compile Include="Assets\LeapMotion\Modules\InteractionEngine\Scripts\Utility\PhysicsCallbacks.cs" />
-     <Compile Include="Assets\Script\ButtonEvents.cs" />
-     <Compile Include="Assets\Script\CollisionEvents.cs" />
-     <Compile Include="Assets\Script\InteractionEvents.cs" />
+     <Compile Include="Assets\Script\Bowling\CollisionEvents.cs" />
+     <Compile Include="Assets\Script\Bowling\InteractionEvents.cs" />
+     <Compile Include="Assets\Script\Maze\HandMove.cs" />
+     <Compile Include="Assets\Script\Maze\KeyboardTranslate.cs" />
+     <Compile Include="Assets\Script\Maze\MouseRotate.cs" />
+     <Compile Include="Assets\Script\Menu\MenuButtons.cs" />
      <None Include="Assets\LeapMotion\Core\Resources\LeapCG.cginc" />
      <None Include="Assets\LeapMotion\Core\README_BEFORE_UPDATING.txt" />
      <None Include="Assets\LeapMotion\Core\readme.txt" />
