@@ -7,9 +7,9 @@ public class InteractionEvents : MonoBehaviour {
     private Vector3 pos;
     private Quaternion rotation;
     private int max_copy_count;
-	void Start () {
+    
 	// Use this for initialization
-		Debug.Log(gameObject.GetType());
+	void Start () {
         pos = gameObject.transform.position;
         rotation = gameObject.transform.rotation;
         max_copy_count = 1;

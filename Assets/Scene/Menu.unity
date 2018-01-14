@@ -197,6 +197,7 @@ GameObject:
   - component: {fileID: 266791490}
   - component: {fileID: 266791489}
   - component: {fileID: 266791488}
+  - component: {fileID: 266791491}
   m_Layer: 5
   m_Name: Game1
   m_TagString: Untagged
@@ -297,6 +298,18 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 266791486}
+--- !u!114 &266791491
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 266791486}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f2d6baa7792a71a4baf3b096e1cff236, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  SceneName: Bowling
 --- !u!1 &319928125
 GameObject:
   m_ObjectHideFlags: 0
@@ -552,6 +565,7 @@ GameObject:
   - component: {fileID: 534892873}
   - component: {fileID: 534892872}
   - component: {fileID: 534892871}
+  - component: {fileID: 534892874}
   m_Layer: 5
   m_Name: Game2
   m_TagString: Untagged
@@ -652,6 +666,18 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 534892869}
+--- !u!114 &534892874
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 534892869}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f2d6baa7792a71a4baf3b096e1cff236, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  SceneName: Maze
 --- !u!1 &640819845
 GameObject:
   m_ObjectHideFlags: 0
@@ -983,7 +1009,6 @@ GameObject:
   - component: {fileID: 969921473}
   - component: {fileID: 969921472}
   - component: {fileID: 969921471}
-  - component: {fileID: 969921474}
   m_Layer: 5
   m_Name: Setting
   m_TagString: Untagged
@@ -1049,7 +1074,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 969921474}
+      - m_Target: {fileID: 0}
         m_MethodName: open_introduction
         m_Mode: 1
         m_Arguments:
@@ -1095,18 +1120,6 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 969921469}
---- !u!114 &969921474
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 969921469}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6310f8085da24f74db75d076aa641c1f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Canvas: {fileID: 0}
 --- !u!1 &1013358687
 GameObject:
   m_ObjectHideFlags: 0
@@ -1118,6 +1131,7 @@ GameObject:
   - component: {fileID: 1013358691}
   - component: {fileID: 1013358690}
   - component: {fileID: 1013358689}
+  - component: {fileID: 1013358692}
   m_Layer: 5
   m_Name: Introduction
   m_TagString: Untagged
@@ -1182,7 +1196,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1013358690}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1013358692}
+        m_MethodName: open_introduction
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!114 &1013358690
@@ -1218,6 +1243,18 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1013358687}
+--- !u!114 &1013358692
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1013358687}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6310f8085da24f74db75d076aa641c1f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Canvas: {fileID: 0}
 --- !u!1 &1103649982
 GameObject:
   m_ObjectHideFlags: 0

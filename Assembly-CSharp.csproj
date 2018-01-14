@@ -255,6 +255,7 @@
      <Compile Include="Assets\Script\Maze\KeyboardTranslate.cs" />
      <Compile Include="Assets\Script\Maze\MouseRotate.cs" />
      <Compile Include="Assets\Script\Menu\MenuButtons.cs" />
+     <Compile Include="Assets\Script\Menu\SceneSwitch.cs" />
      <None Include="Assets\LeapMotion\Core\Resources\LeapCG.cginc" />
      <None Include="Assets\LeapMotion\Core\README_BEFORE_UPDATING.txt" />
      <None Include="Assets\LeapMotion\Core\readme.txt" />
