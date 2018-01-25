@@ -20,4 +20,8 @@ public class CollisionEvents : MonoBehaviour {
         Debug.Log("Collections!");
         finish.SetActive(true);
     }
+
+    public void close_finish(){
+        finish.SetActive(false);
+    }
 }
