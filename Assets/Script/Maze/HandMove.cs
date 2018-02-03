@@ -12,8 +12,8 @@ public class HandMove : MonoBehaviour
     private enum MoveDirection { Forward = 1, Left = 2, Right = 3 }
 
     // these two variables are used to control the speed of moving
-    private float rotation_speed = 0.4f;
-    private float translation_speed = 0.08f;
+    public float rotation_speed = 0.3f;
+    public float translation_speed = 0.06f;
 
     private MoveDirection _direction;
 

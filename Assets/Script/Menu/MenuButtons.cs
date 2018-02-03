@@ -3,7 +3,6 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 public class MenuButtons : MonoBehaviour {
-	public Button btn;
     public GameObject Canvas;
 	// Use this for initialization
 	void Start () {
@@ -30,4 +29,12 @@ public class MenuButtons : MonoBehaviour {
 	public void close_setting(){
 		gameObject.transform.parent.gameObject.SetActive(false);
 	}
+
+    public void exit(){
+        #if UNITY_EDITOR
+            UnityEditor.EditorApplication.isPlaying = false;
+        #else
+            Application.Quit();
+        #endif
+    }
 }

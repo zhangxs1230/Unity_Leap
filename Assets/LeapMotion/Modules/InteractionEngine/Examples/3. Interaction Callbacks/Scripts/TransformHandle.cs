@@ -26,7 +26,6 @@ namespace Leap.Unity.Examples {
     public UnityEvent OnShouldHideHandle  = new UnityEvent();
     public UnityEvent OnHandleActivated   = new UnityEvent();
     public UnityEvent OnHandleDeactivated = new UnityEvent();
-    //public UnityEvent Ontest = new UnityEvent();
 
     protected virtual void Start() {
       _intObj = GetComponent<InteractionBehaviour>();

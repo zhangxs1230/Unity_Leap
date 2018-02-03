@@ -25,9 +25,7 @@ namespace Leap.Unity.Examples {
       _intObj.OnGraspedMovement += onGraspedMovement;
     }
 
-    private void onGraspedMovement(Vector3 presolvePos, Quaternion presolveRot, 
-                                   Vector3 solvedPos, Quaternion solvedRot, 
-                                   List<InteractionController> controllers) {
+    private void onGraspedMovement(Vector3 presolvePos, Quaternion presolveRot, Vector3 solvedPos, Quaternion solvedRot, List<InteractionController> controllers) {
       /* 
        * The RotationHandle works very similarly to the TranslationHandle.
        * 
@@ -41,8 +39,7 @@ namespace Leap.Unity.Examples {
       // Constrain the position of the handle and determine the resulting rotation required to get there.
       Vector3 presolveToolToHandle = presolvePos - _tool.transform.position;
       Vector3 solvedToolToHandleDirection = (solvedPos - _tool.transform.position).normalized;
-      Vector3 constrainedToolToHandle = Vector3.ProjectOnPlane(solvedToolToHandleDirection,
-                                        (presolveRot * Vector3.up)).normalized * presolveToolToHandle.magnitude;
+      Vector3 constrainedToolToHandle = Vector3.ProjectOnPlane(solvedToolToHandleDirection, (presolveRot * Vector3.up)).normalized * presolveToolToHandle.magnitude;
       Quaternion deltaRotation = Quaternion.FromToRotation(presolveToolToHandle, constrainedToolToHandle);
 
       // Notify the tool about the calculated rotation.
